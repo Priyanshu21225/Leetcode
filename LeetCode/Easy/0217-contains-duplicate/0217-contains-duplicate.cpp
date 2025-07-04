@@ -7,9 +7,7 @@ public:
             if(seen.count(num)){
                 return true;
             }
-            else{
-                seen.insert(num);
-            }
+            seen.insert(num);
         }
         return false;
     }
