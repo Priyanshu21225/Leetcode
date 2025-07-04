@@ -4,11 +4,11 @@ public:
         // Use the Hashing Technique to make it efficient
         unordered_set<int> seen;
         for(int num:nums){
-            if(seen.count(nums[i])){
+            if(seen.count(num)){
                 return true;
             }
             else{
-                seen.insert(nums[i]);
+                seen.insert(num);
             }
         }
         return false;
